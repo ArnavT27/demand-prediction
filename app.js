@@ -20,7 +20,7 @@ let lastTrainingTime = null;
 // Helper function to run Python script
 function runPythonScript(scriptPath) {
     return new Promise((resolve, reject) => {
-        const python = spawn('python3', [scriptPath]);
+        const python = spawn('python', [scriptPath]);
         let stdout = '';
         let stderr = '';
 

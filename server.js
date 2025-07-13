@@ -24,7 +24,7 @@ let modelStatus = 'idle'; // idle, training, ready, error
 // Helper function to run Python script
 function runPythonScript(scriptPath, args = []) {
     return new Promise((resolve, reject) => {
-        const python = spawn('python3', [scriptPath, ...args]);
+        const python = spawn('python', [scriptPath, ...args]);
         let stdout = '';
         let stderr = '';
 
